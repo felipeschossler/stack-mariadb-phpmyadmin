@@ -1,0 +1,29 @@
+version: "2.4"
+services:
+
+  # MariaDB
+  mariadb:
+    container_name: mariadb
+    image: mariadb:10.4
+    ports:
+      - 3306:3306
+    networks:
+      - stack-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=Passwd123
+    mem_limit: 1024M
+
+  # PHPMyAdmin
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin:4.9
+    ports:
+      - 80:80
+    environment:
+      - PMA_HOST=mariadb
+    networks:
+      - stack-db
+    mem_limit: 500M
+
+networks:
+  stack-db:
