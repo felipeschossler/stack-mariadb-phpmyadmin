@@ -37,6 +37,7 @@ And voilá, your stack is up and running. For acessing your PHPMyAdmin you just 
 The user and password are this:
 
 **User:** root
+
 **Password:** Passwd123
 
 If something doesn't work it probably there some app running in your port 80.
