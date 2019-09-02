@@ -6,7 +6,7 @@ This is a simple stack for running MariaDB database. Using PHPMyAdmin to facilit
 
 For use this you need to install Docker and Docker Compose. If you are running on **Windows** it doesn't need to install the Docker Compose.
 
-### Install Compose
+### Install Compose on Linux
 
 For install Docker Compose you just need execute 2 commands:
 
