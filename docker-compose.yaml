@@ -12,6 +12,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=Passwd123
     mem_limit: 1024M
+    restart: unless-stopped
 
   # PHPMyAdmin
   phpmyadmin:
@@ -24,6 +25,7 @@ services:
     networks:
       - stack-db
     mem_limit: 500M
+    restart: unless-stopped
 
 networks:
   stack-db:
